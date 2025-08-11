@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños - Draguito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo de la invitación (Imagen 2) -->
+    <div class="background-invitation" id="backgroundInvitation"></div>
+    
+    <!-- Pantalla inicial con fondo (Imagen 1) -->
+    <div class="initial-screen" id="initialScreen">
+        <div class="initial-content">
+            <button class="special-button" id="specialButton">
+                <span class="button_top">
+                    ✨ Tengo algo especial para ti ✨
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Tarjeta de invitación con Glassmorphism -->
+    <div class="invitation-card" id="invitationCard">
+        <div class="glass-card">
+            <!-- Título principal -->
+            <h1 class="main-title">
+                <img src="/image/Cara Draguito.png" alt="Osito" class="title-image left">
+                Mis 6 añitos
+                <img src="/image/Cara Draguito.png" alt="Osito" class="title-image right">
+            </h1>
+            
+            <!-- Subtítulo -->
+            <h2 class="subtitle">Draguito</h2>
+            
+            <!-- Información del evento -->
+            <div class="event-info">
+                <div class="info-item">
+                    <span class="icon">📅</span>
+                    <span class="text">Domingo 17 de Agosto</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">🕔</span>
+                    <span class="text">5:00 PM</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <span class="text">¡Te esperamos!</span>
+                </div>
+            </div>
+
+            <!-- Conteo regresivo -->
+            <div class="countdown-container">
+                <h3 class="countdown-title">¡Faltan:</h3>
+                <div class="countdown" id="countdown">
+                    <div class="time-unit">
+                        <span class="number" id="days">00</span>
+                        <span class="label">Días</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="hours">00</span>
+                        <span class="label">Horas</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="minutes">00</span>
+                        <span class="label">Minutos</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="seconds">00</span>
+                        <span class="label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón para ver dirección -->
+            <div class="button-container">
+                <button class="location-button" id="locationButton">
+                    <span class="button_top">
+                        📍 Ver Dirección
+                    </span>
+                </button>
+            </div>
+
+            <!-- Decoración de hojas de otoño -->
+            <div class="autumn-decoration">
+                <!-- Decoración sin emojis -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
