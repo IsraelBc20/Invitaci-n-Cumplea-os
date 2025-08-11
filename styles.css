@@ -334,11 +334,16 @@ body, html {
         0 4px 8px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 140, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
 }
 
 .number {
     display: block;
-    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: 1.5rem;
     font-weight: bold;
     color: #8B4513;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -346,7 +351,7 @@ body, html {
 
 .label {
     display: block;
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    font-size: 0.9rem;
     color: #8B4513;
     margin-top: 0.2rem;
 }
@@ -478,4 +483,41 @@ body, html {
         font-size: 28px;
     }
 }
+@media (max-width: 450px) {
+    .countdown {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+     /* Días y Horas en la primera fila, Minutos y Segundos en la segunda */
+    .time-unit:nth-child(1),
+    .time-unit:nth-child(2) {
+        grid-row: 1;
+    }
 
+    .time-unit:nth-child(3),
+    .time-unit:nth-child(4) {
+        grid-row: 2;
+    }
+}
+
+/* --- Ajuste progresivo de tamaño conforme se reduce más la pantalla --- */
+@media (max-width: 400px) {
+    .number {
+        font-size: 1.5rem;
+    }
+
+    .label {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .number {
+        font-size: 1.2rem;
+    }
+
+    .label {
+        font-size: 0.8rem;
+    }
+}
