@@ -91,7 +91,7 @@ body, html {
     --button_radius: 1em;
     --button_color: #FFD700;
     --button_outline_color: #8B4513;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -118,21 +118,21 @@ body, html {
 /* Pantallas medianas */
 @media (max-width: 768px) {
     .special-button .button_top {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 /* Pantallas pequeñas */
 @media (max-width: 600px) {
     .special-button .button_top {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
 /* Pantallas muy pequeñas */
 @media (max-width: 450px) {
     .special-button .button_top {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
