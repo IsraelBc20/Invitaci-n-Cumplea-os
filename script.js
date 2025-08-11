@@ -44,11 +44,16 @@ function openGoogleMaps() {
     window.open(mapsUrl, '_blank');
 }
 
-// Función para manejar efectos de sonido (opcional)
+// Función para manejar efectos de sonido
+// Declarar la variable de audio fuera de la función
+let honeyAudio = new Audio('Audio%20para%20draguito.mp3');
+honeyAudio.volume = 0.9;
+
 function playHoneySound() {
-    const audio = new Audio('Audio%20para%20draguito.mp3'); // Ruta y nombre correctos
-    audio.volume = 0.9;
-    audio.play().catch(e => console.log('Audio no disponible', e));
+    // Si está sonando, reiniciamos desde el inicio
+    honeyAudio.pause();
+    honeyAudio.currentTime = 0;
+    honeyAudio.play().catch(e => console.log('Audio no disponible', e));
 }
 
 
