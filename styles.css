@@ -200,7 +200,7 @@ body, html {
 
 /* Títulos */
 .main-title {
-    font-size: clamp(50px, 5vw, 45px);
+    font-size: clamp(35px, 5vw, 30px);
     color: #efefef;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
