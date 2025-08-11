@@ -1,5 +1,5 @@
 // Configuración del evento
-const eventDate = new Date('2025-08-17T17:00:00'); // Domingo 17 de agosto a las 5:00 PM
+const eventDate = new Date('2025-08-17T16:30:00'); // Domingo 17 de agosto a las 5:00 PM
 
 // Coordenadas para Google Maps
 const latitude = -11.4895085;
