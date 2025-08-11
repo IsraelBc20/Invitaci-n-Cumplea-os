@@ -200,7 +200,7 @@ body, html {
 
 /* Títulos */
 .main-title {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(50px, 5vw, 45px);
     color: #efefef;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -220,6 +220,7 @@ body, html {
     object-fit: contain;
     animation: bounce 2s infinite;
     vertical-align: middle;
+    display: inline-block;
 }
 
 .title-image.left {
@@ -243,7 +244,7 @@ body, html {
 }
 
 .subtitle {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(70px, 4vw, 65px);
     color: rgba(252, 221, 49, 0.911);
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -414,6 +415,11 @@ body, html {
     .countdown-container {
         margin-bottom: 1rem;
     }
+}
+@media (max-width: 600px) {
+  .title-image {
+    display: none;
+  }
 }
 
 
