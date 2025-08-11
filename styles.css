@@ -91,7 +91,7 @@ body, html {
     --button_radius: 1em;
     --button_color: #FFD700;
     --button_outline_color: #8B4513;
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-size: 1.2rem;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -113,6 +113,26 @@ body, html {
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+    }
+}
+/* Pantallas medianas */
+@media (max-width: 768px) {
+    .special-button .button_top {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+    .special-button .button_top {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 450px) {
+    .special-button .button_top {
+        font-size: 0.8rem;
     }
 }
 
